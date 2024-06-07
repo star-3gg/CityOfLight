@@ -1,0 +1,865 @@
+{
+	"folders": [
+		{
+			"name": "CityOfLight",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "CityOfLight Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Test",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Test",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Test",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Shipping",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Shipping",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"Linux",
+					"Shipping",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Test",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Test",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Test",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Shipping",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Shipping",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLight LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLight LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLight",
+					"LinuxArm64",
+					"Shipping",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLightEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"Debug",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLightEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"DebugGame",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CityOfLightEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			},
+			{
+				"label": "CityOfLightEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"CityOfLightEditor",
+					"Linux",
+					"Development",
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch CityOfLight (Debug)",
+				"request": "launch",
+				"program": "/home/s74r366/Documents/Unreal Projects/CityOfLight/Binaries/Linux/CityOfLight-Linux-Debug",
+				"preLaunchTask": "CityOfLight Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications",
+				"type": "cppdbg",
+				"visualizerFile": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch CityOfLight (DebugGame)",
+				"request": "launch",
+				"program": "/home/s74r366/Documents/Unreal Projects/CityOfLight/Binaries/Linux/CityOfLight-Linux-DebugGame",
+				"preLaunchTask": "CityOfLight Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications",
+				"type": "cppdbg",
+				"visualizerFile": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch CityOfLight (Development)",
+				"request": "launch",
+				"program": "/home/s74r366/Documents/Unreal Projects/CityOfLight/Binaries/Linux/CityOfLight",
+				"preLaunchTask": "CityOfLight Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications",
+				"type": "cppdbg",
+				"visualizerFile": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch CityOfLight (Test)",
+				"request": "launch",
+				"program": "/home/s74r366/Documents/Unreal Projects/CityOfLight/Binaries/Linux/CityOfLight-Linux-Test",
+				"preLaunchTask": "CityOfLight Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications",
+				"type": "cppdbg",
+				"visualizerFile": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch CityOfLight (Shipping)",
+				"request": "launch",
+				"program": "/home/s74r366/Documents/Unreal Projects/CityOfLight/Binaries/Linux/CityOfLight-Linux-Shipping",
+				"preLaunchTask": "CityOfLight Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications",
+				"type": "cppdbg",
+				"visualizerFile": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch CityOfLightEditor (Debug)",
+				"request": "launch",
+				"program": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "CityOfLightEditor Linux Debug Build",
+				"args": [
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject"
+				],
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications",
+				"type": "cppdbg",
+				"visualizerFile": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch CityOfLightEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "CityOfLightEditor Linux DebugGame Build",
+				"args": [
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject"
+				],
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications",
+				"type": "cppdbg",
+				"visualizerFile": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch CityOfLightEditor (Development)",
+				"request": "launch",
+				"program": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "CityOfLightEditor Linux Development Build",
+				"args": [
+					"/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject"
+				],
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications",
+				"type": "cppdbg",
+				"visualizerFile": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/s74r366/Documents/Unreal Projects/CityOfLight/CityOfLight.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/s74r366/Documents/GitHub/star-3gg/UnrealEngineStudioModifications"
+			}
+		]
+	}
+}
