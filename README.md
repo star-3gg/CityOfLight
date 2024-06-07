@@ -1,4 +1,4 @@
-# city-of-light
+# City of Light
 A Tron themed virtual world built with UE5
 
 ## Blender Screenshot
